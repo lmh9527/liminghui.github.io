@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Xenon Boostrap Admin Panel" />
+    <meta name="author" content="" />
+    <title>账号管理</title>
+    <link rel="stylesheet" href="public/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="public/css/public_nav.css">-->
+    <!--<link rel="stylesheet" href="css/fonts/linecons/css/linecons.css">-->
+    <!--<link rel="stylesheet" href="css/fonts/fontawesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="public/css/account_management.css">
+    <link rel="stylesheet" href="public/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="public/js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="public/css/common.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body class="page-body">
+<div class="settings-pane">
+
+    <a href="#" data-toggle="settings-pane" data-animate="true" >
+        &times;
+    </a>
+
+    <div class="settings-pane-inner">
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="user-info">
+
+                    <div class="user-image">
+                        <a href="#">
+                            <img src="images/user-2.png" class="img-responsive img-circle" />
+                        </a>
+                    </div>
+
+                    <div class="user-details">
+
+                        <h3>
+                            <a href="#">John Smith</a>
+
+                            <!-- Available statuses: is-online, is-idle, is-busy and is-offline -->
+                            <span class="user-status is-online"></span>
+                        </h3>
+
+                        <p class="user-title">Web Developer</p>
+
+                        <div class="user-links">
+                            <a href="#" class="btn btn-primary">Edit Profile</a>
+                            <a href="#" class="btn btn-success">Upgrade</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-8 link-blocks-env">
+
+                <div class="links-block left-sep">
+                    <h4>
+                        <span>Notifications</span>
+                    </h4>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk1" />
+                            <label for="sp-chk1">Messages</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk2" />
+                            <label for="sp-chk2">Events</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk3" />
+                            <label for="sp-chk3">Updates</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk4" />
+                            <label for="sp-chk4">Server Uptime</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="links-block left-sep">
+                    <h4>
+                        <a href="#">
+                            <span>Help Desk</span>
+                        </a>
+                    </h4>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">
+                                <i class="fa-angle-right"></i>
+                                Support Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-angle-right"></i>
+                                Submit a Ticket
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-angle-right"></i>
+                                Domains Protocol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-angle-right"></i>
+                                Terms of Service
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="page-container">
+
+    <!--左侧导航-->
+
+    <div class="main-content">
+
+        <nav class="navbar user-info-navbar" role="navigation">
+
+            <!-- Left links for user info navbar -->
+
+            <ul class="user-info-menu left-links list-inline list-unstyled ">
+                <li class="dropdown hover-line nav_header" >
+                    <img src="images/album-img-6.png" alt="logo" style="width: 200px;height: 100px">
+                </li>
+
+
+                <li title="个人中心"  class="dropdown hover-line nav_header">
+                    <a href="myCenter.html" class="nav_header_a">
+
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <span>个人中心</span>
+
+                    </a>
+
+                </li>
+                <!--个人中心-->
+                <li title="公告通知" class="dropdown hover-line nav_header">
+                    <a href="#" class="nav_header_a">
+
+                        <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                        <span>公告通知</span>
+                    </a>
+                </li>
+                <!--公告通知-->
+                <li title="公司结构" class="dropdown hover-line nav_header">
+                    <a href="#" class="nav_header_a">
+
+                        <i class="fa fa-gg" aria-hidden="true"></i>
+                        <span>公司结构</span>
+
+
+                    </a>
+                </li>
+                <!--公司结构-->
+                <li title="项目管理" class="dropdown hover-line nav_header">
+                    <a href="#" class="nav_header_a">
+
+                        <i class="fa fa-list" aria-hidden="true"></i>
+                        <span>项目管理</span>
+
+
+                    </a>
+                </li>
+                <!--项目管理-->
+                <li title="技术分享" class="dropdown hover-line nav_header">
+                    <a href="#" class="nav_header_a">
+
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        <span>技术分享</span>
+
+
+                    </a>
+                </li>
+                <!--技术分享-->
+                <li title="人事行政" class="dropdown hover-line nav_header">
+                    <a href="#" class="nav_header_a">
+
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        <span>人事行政</span>
+
+
+                    </a>
+                </li>
+                <!--人事行政-->
+                <li title="财务管理" class="dropdown hover-line nav_header">
+                    <a href="#" class="nav_header_a">
+
+                        <i class="fa fa-ticket" aria-hidden="true"></i>
+                        <span>财务管理</span>
+
+
+                    </a>
+                </li>
+                <!--财务管理-->
+                <li title="设置" class="dropdown hover-line nav_header">
+                    <a href="#" class="nav_header_a">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        <span>&nbsp;&nbsp;设置</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Right links for user info navbar -->
+            <ul class="user-info-menu right-links list-inline list-unstyled">
+
+
+
+                <li class="search-form"><!-- You can add "always-visible" to show make the search input visible -->
+
+                    <form method="get" action="extra-search.html">
+                        <input type="text" name="s" class="form-control search-field" placeholder="Type to search..." />
+
+                        <button type="submit" class="btn btn-link">
+                            <i class="fa fa-search" aria-hidden="true" style="font-size: 16px;margin-top: 10px"></i>
+                        </button>
+                    </form>
+
+                </li>
+
+                <li class="dropdown hover-line nav_header_information">
+                    <a href="#" data-toggle="dropdown">
+                        <i class="fa-envelope-o"></i>
+                        <span class="badge badge-green">15</span>
+                    </a>
+
+                    <ul class="dropdown-menu messages">
+                        <li>
+
+                            <ul class="dropdown-menu-list list-unstyled ps-scrollbar">
+
+                                <li class="active"><!-- "active" class means message is unread -->
+                                    <a href="#">
+											<span class="line">
+												<strong>Luc Chartier</strong>
+												<span class="light small">- yesterday</span>
+											</span>
+
+                                        <span class="line desc small">
+												This ain’t our first item, it is the best of the rest.
+											</span>
+                                    </a>
+                                </li>
+
+                                <li class="active">
+                                    <a href="#">
+											<span class="line">
+												<strong>Salma Nyberg</strong>
+												<span class="light small">- 2 days ago</span>
+											</span>
+
+                                        <span class="line desc small">
+												Oh he decisively impression attachment friendship so if everything.
+											</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+											<span class="line">
+												Hayden Cartwright
+												<span class="light small">- a week ago</span>
+											</span>
+
+                                        <span class="line desc small">
+												Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+											</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+											<span class="line">
+												Sandra Eberhardt
+												<span class="light small">- 16 days ago</span>
+											</span>
+
+                                        <span class="line desc small">
+												On so attention necessary at by provision otherwise existence direction.
+											</span>
+                                    </a>
+                                </li>
+
+                                <!-- Repeated -->
+
+                                <li class="active"><!-- "active" class means message is unread -->
+                                    <a href="#">
+											<span class="line">
+												<strong>Luc Chartier</strong>
+												<span class="light small">- yesterday</span>
+											</span>
+
+                                        <span class="line desc small">
+												This ain’t our first item, it is the best of the rest.
+											</span>
+                                    </a>
+                                </li>
+
+                                <li class="active">
+                                    <a href="#">
+											<span class="line">
+												<strong>Salma Nyberg</strong>
+												<span class="light small">- 2 days ago</span>
+											</span>
+
+                                        <span class="line desc small">
+												Oh he decisively impression attachment friendship so if everything.
+											</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+											<span class="line">
+												Hayden Cartwright
+												<span class="light small">- a week ago</span>
+											</span>
+
+                                        <span class="line desc small">
+												Whose her enjoy chief new young. Felicity if ye required likewise so doubtful.
+											</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+											<span class="line">
+												Sandra Eberhardt
+												<span class="light small">- 16 days ago</span>
+											</span>
+
+                                        <span class="line desc small">
+												On so attention necessary at by provision otherwise existence direction.
+											</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="external">
+                            <a href="blank-sidebar.html">
+                                <span>All Messages</span>
+                                <i class="fa-link-ext"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="dropdown user-profile">
+                    <a href="#" data-toggle="dropdown">
+
+                        <span>
+								管理员
+								<i class="fa-angle-down"></i>
+							</span>
+                        <img src="images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+                    </a>
+
+                    <ul class="dropdown-menu user-profile-menu list-unstyled">
+                        <li>
+                            <a href="#edit-profile">
+                                <i class="fa-edit"></i>
+                                修改密码
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#settings">
+                                <i class="fa-wrench"></i>
+                                权限分配
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+
+            </ul>
+
+        </nav>
+<section>
+    <div class="row section-1">
+    <div class="col-md-4">
+        <div>
+
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div>
+            <ul class="list-group list-group-minimal">
+                <li class="list-group-item">
+                    <span class="badge badge-roundless "> <i class="fa fa-bars" aria-hidden="true"></i></span>
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>通知公告
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    <span class="badge badge-roundless badge-info">2017-1-5</span>
+                    关于对杨晓波总经理任命通知
+                    <br>
+                    杨小波在工作认真负责，得到领导的赏识
+                    一优异的表现……
+                </li>
+                <li class="list-group-item">
+                    <span class="badge badge-roundless badge-danger">2017-1-5</span>
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    关于对杨晓波总经理任命通知
+                    <br>
+                    杨小波在工作认真负责，得到领导的赏识
+                    一优异的表现……
+                </li>
+                <li class="list-group-item">
+                    <span class="badge badge-roundless badge-success">2017-1-5</span>
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    关于对杨晓波总经理任命通知
+                    <br>
+                    杨小波在工作认真负责，得到领导的赏识
+                    一优异的表现……
+                </li>
+                <li class="list-group-item">
+                    <span class="badge badge-roundless badge-warning">2017-1-5</span>
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    关于对杨晓波总经理任命通知
+                    <br>
+                    杨小波在工作认真负责，得到领导的赏识
+                    一优异的表现……
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="col-md-4" >
+        <div style="margin-right: 0px" class="">
+            <p  class="col-md-4-p">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <span>工程班组</span>
+                <i class="fa fa-bars p-i" aria-hidden="true"></i>
+            </p>
+            <div class="row team">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-4">
+                <div>
+                   <p>
+                       <span class="numerator ">15</span><span>/</span><span>30</span>
+                   </p>
+                    <p>土建</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <p>
+                        <span class="numerator ">15</span><span>/</span><span>30</span>
+                    </p>
+                    <p>水电</p>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+            <div class="row team">
+                <div class="col-md-4">
+                    <div>
+                        <p>
+                            <span class="numerator ">15</span><span>/</span><span>30</span>
+                        </p>
+                        <p>安防</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <p>
+                            <span class="numerator ">15</span><span>/</span><span>30</span>
+                        </p>
+                        <p>安防</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <p>
+                            <span class="numerator ">15</span><span>/</span><span>30</span>
+                        </p>
+                        <p>安防</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+    <div class="row section-2">
+        <div class="col-md-4">
+            <div>
+                <ul class="list-group list-group-minimal">
+                    <li class="list-group-item">
+                        <span class="badge badge-roundless badge-primary">
+                          <i class="fa fa-bars" aria-hidden="true"></i>
+                        </span>
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>规则制度
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge badge-roundless badge-info">2017-3-5</i></span>
+                        <i class="fa fa-genderless" aria-hidden="true"></i>施工员的工作制作和工作规范
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge badge-roundless badge-danger">2017-5-6</span>
+                        <i class="fa fa-genderless" aria-hidden="true"></i>采购部的规章制度
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge badge-roundless badge-success">2017-5-6</span>
+                        <i class="fa fa-genderless" aria-hidden="true"></i>员工上下班打卡规章
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge badge-roundless badge-warning">2017-5-6</span>
+                        <i class="fa fa-genderless" aria-hidden="true"></i>费用报销的规章和流程
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-md-4 " >
+<div>
+    <ul class="list-group list-group-minimal">
+        <li class="list-group-item">
+            <span class="badge badge-roundless badge-primary"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>会议纪要
+        </li>
+        <li class="list-group-item">
+            <span class="badge badge-roundless badge-info">2017-3-12</span>
+            <i class="fa fa-genderless" aria-hidden="true"></i>关于国庆节放会议
+        </li>
+        <li class="list-group-item">
+            <span class="badge badge-roundless badge-danger">2017-3-12</span>
+            <i class="fa fa-genderless" aria-hidden="true"></i>关于国庆节放会议
+        </li>
+        <li class="list-group-item">
+            <span class="badge badge-roundless badge-success">2017-3-12</span>
+            <i class="fa fa-genderless" aria-hidden="true"></i>关于国庆节放会议
+        </li>
+        <li class="list-group-item">
+            <span class="badge badge-roundless badge-warning">2017-3-12</span>
+            <i class="fa fa-genderless" aria-hidden="true"></i>关于国庆节放会议
+        </li>
+    </ul>
+</div>
+
+
+
+        </div>
+        <div class="col-md-4" >
+            <div style="margin-right: 0">
+                <ul class="list-group list-group-minimal approvalColor">
+                    <li class="list-group-item">
+                        <span class="badge badge-roundless badge-primary"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>代办事务
+                        代办事务
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge badge-roundless badge-info">2017-3-12</span>
+                        <i class="fa fa-genderless" aria-hidden="true"></i>【<span class="state-1" style="color:#00a9d6 ">任务</span>】习大大安排杨小波去北京
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge badge-roundless badge-danger">2017-3-12</span>
+                        <i class="fa fa-genderless" aria-hidden="true"></i>【<span class="state-1" style="color:#00a9d6 ">任务</span>】杨小波事假
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge badge-roundless badge-success">2017-3-12</span>
+                        <i class="fa fa-genderless" aria-hidden="true"></i>【<span class="state-1" style="color:#d2d24e ">审批</span>】杨小波事假
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge badge-roundless badge-warning">2017-3-12</span>
+                        <i class="fa fa-genderless" aria-hidden="true"></i>【<span class="state-1" style="color:#d2d24e ">审批</span>】杨小波事假
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+
+
+    <!--头部-->
+
+</div>
+
+<script src="public/js/bootstrap.min.js"></script>
+<script src="public/js/TweenMax.min.js"></script>
+<script src="js/resizeable.js"></script>
+<script src="js/xenon-custom.js"></script>
+<script src="public/js/xenon-toggles.js"></script>
+<script src="public/js/common.js"></script>
+</body>
+</html>
